@@ -1,81 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Metrics for many things">
-    <meta name="author" content="Luigi">
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123563091-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-123563091-1');
+  </script>
 
-    <title>Cosmometrics</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
-
-    <!-- Custom styles for this template -->
-    <!-- <link href="navbar.css" rel="stylesheet"> -->
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
-  </head>
-
-  <body>
-
-    <div class="container">
-      <nav class="navbar navbar-light bg-faded">
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
-          &#9776;
-      </button>
-        <div class="collapse navbar-toggleable-xs" id="navbar-header">
-          <a class="navbar-brand" href="#">Cosmometrics</a>
-          <ul class="nav navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="http://umbrellavalidator.com">About Umbrella Validator</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://cosmosmetrics.com">Metrics for Cosmos Network</a>
-            </li>
-          </ul>
-        </div>
-      </nav> <!-- /navbar -->
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>To Do</h1>
-        <p>Lots</p>
+  <meta charset="utf-8">
+  <meta name="description" content="Umbrella Validator">
+  <!--
+                   NNN8
+                   ONNNNND
+                    DNNN8+++Z
+                     7NNI+++++8                                             ,8D,
+                      ZN?+++++++?                                      ,ZNNNNN+
+                       ?Z+++++++++?                                 D++++DNNN?
+                         $+++++++++O                             $+++++++DNN=
+                          ??+++++++++                         ?++++++++++NN
+                            D+++++++++   ?OD7II$D8?         I++++++++++++I
+         OD                   Z+++++++O+++++++++++++++N?   ?+++++++++++D
+        ++++++D                 D?+++++++++++++++++++++++D+++++++++++I
+       ++++++++++D                ,+++++++++++++++++++++++++++++++$?
+     =++++++++++++++$+            +++++++++++++++++++++++++++??$
+    ,++++++++++++++++++D?         +++++++++++++++++++++++++++
+   ,++++++++++++++++++++++Z      N+++?ND D+++++++++++++++++++D
+  ,++++++++++++++++++++++++++Z   ++++NNN.N++++++++++++$NN++++7
+  +++++++++++++++++++++++++++++I?++++DNNNN+++++++++++N..=N8++$
+ ++++++++++++++++++++++++I+$+++++++++++++++++++N+++++DNNNND++D
+D++++++++++++++++++++++7++++$+++D7777?++++++++++++++++DNN?+++D
+8++++++???????????????Z+++++++?N777777+++++88888D++++++++++++N
+      :8???????????????+++++++++777777+++++D$$$$N88++++++Z77D+
+            ?D?????????O+++++++++D77Z++++++O$$$$$$N+++++777777
+                   $Z???O++++++++++++++++++??????I++++++77777O
+                        ,+++++++++++++++++++????$+++++++I777D
+                         I+++++++++++++++++++??O+++++++++++,
+                       7??Z++++++++++++++++++++++++++++++
+                      7????7++++++++++++++++++++++++++D++
+                     $??????$++++++++++++++?????+++++++++,
+                    D??????,  +++++++++++++++++++++++++++$
+                   O?????????D O++++++++++++++++++?+++++++
+                      ?7?????????Z++++++++++++++++++++++++:
+                          O???D++++++++++++++++++O++++++++?
+                          D???++++++++++++++++++++++++++++?
+                         DOOZD++++++++++++++++++++++++++++
+                        8OOO?+++++++++++++++++++I++++++++D
+                        ?OOO8+++8+D++D++++++++++7++++++++++D  Z
+                           OI++++++$+++Z++++++++++++++++O+++D++O
+                            +++++++??$++++++++++OD+++++8+++++Z8?
+                            +++++++???+++++++++++++DODI++++????
+                            ++++++D???N++++++++++++++++++++???,
+                            D+++??????????????????????+++????N
+                             ???????????????????????????????D
+                               $???????$???????????????????N
+                                  ,?8??.          ,78DDD???
+  -->
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>Umbrella Validator</title>
+  <link href="public/umbrella.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" data-noprefix rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Raleway:500|Inconsolata" rel="stylesheet" data-noprefix>
+  <link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico">
+</head>
+<body id="umbrella">
+<div id="outside" class="lefthalf black">
+  <div class="homeLayout">
+    <div class="homeRow intro">
+    <div>
+      <h1>Hi there.</h1>
+      <h2>At Umbrella, we validate blocks on the Cosmos Network</h2>
+      <br>
+      <div class="links">
+        <a href="https://cosmos.network/" class="cosmos"><img src="public/cosmos.png" class="fa fa-spin" width="120px"></img></a>
+        <!--
+        <a href="https://github.com/umbrellavalidator" class="github"><i class="fa fa-github-alt fa-fw"></i></a>
+        <a href="https://twitter.com/UmbrellaValid" class="twitter"><i class="fa fa-twitter"></i></a>
+        -->
       </div>
+    </div>
+    </div>
+    <div class="homeRow footer">
+      <div>
+      <div class="key">
+        <i class="fa fa-key fa-fw"></i><a href="https://keybase.io/umbrellavalid/sigs/6WnTdDF0EclhEZyUya8aKWK4SCG2uNzPHObU"> A530 AC4D 7599 1FE2</a>
+      </div>
+      <br>
+      <div class="mail">
+        <i class="fa fa-envelope fa-fw"></i><a href="mailto:hello@umbrellavalidator.com"> hello@umbrellavalidator.com</a>
+      </div>
+      <br>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" async></script>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Icons at center
+    $(".cosmos").mouseover(function() {
+      $("#outside").animate({backgroundColor: "#1d213e"}, 200); });
+    $(".github").mouseover(function() {
+      $("#outside").animate({backgroundColor: "#262626"}, 200); });
+    $(".twitter").mouseover(function() {
+      $("#outside").animate({backgroundColor: "#344152"}, 200); });
+    // Boycott Facebook temporarily.
+    //$(".facebook").mouseover(function() {
+    //  $("#outside").animate({backgroundColor: "#444444"}, 200); });
 
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-XXXXXXXX" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script>
-        (function () {
-            'use strict';
-            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-                var msViewportStyle = document.createElement('style')
-                msViewportStyle.appendChild(
-                    document.createTextNode(
-                        '@-ms-viewport{width:auto!important}'
-                    )
-                )
-                document.querySelector('head').appendChild(msViewportStyle)
-            }
-        })();
-    </script>
-  </body>
+    // Icons at bottom-right
+    $(".key").mouseover(function() {
+      $(".fa-key").animate({color: "#F1C40F"}, 200); });
+    $(".mail").mouseover(function() {
+      $(".fa-envelope").animate({color: "#AB31F6"}, 200); });
+    $(".location").mouseover(function() {
+      $(".fa-globe").animate({color: "#2ECC71"}, 200); });
+  });
+</script>
+</body>
 </html>

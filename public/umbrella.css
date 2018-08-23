@@ -1,0 +1,376 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.textlink {
+  color: lightskyblue;
+}
+a:hover {
+  color: deepskyblue;
+  text-decoration: none;
+}
+html, body#umbrella {
+  height: 100%;
+}
+body {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 20px;
+  background: #EEE;
+  transform: translate3d(0, 0, 0);
+}
+.homeLayout {
+  display: table;
+  height: 100%;
+}
+.lefthalf {
+  background: #DDD;
+  color: #333;
+}
+.lefthalf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  animation: 1s unveil;
+}
+.lefthalf .homeLayout {
+  width: 100%;
+}
+@keyframes unveil {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.black {
+  background: #333;
+  color: #DDD;
+}
+.homeLayout h1 {
+  animation: 2s unblur;
+}
+@keyframes unblur {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -ms-filter: blur(30px);
+    -o-filter: blur(30px);
+    filter: blur(30px);
+  }
+  50% {
+    opacity: 0;
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -ms-filter: blur(30px);
+    -o-filter: blur(30px);
+    filter: blur(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
+    -o-filter: blur(0);
+    filter: blur(0);
+  }
+}
+.homeLayout h2 {
+  animation: 3s hdown;
+}
+@keyframes hdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-75px);
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(-75px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.homeLayout .homeRow {
+  display: table-row;
+}
+.homeLayout .homeRow > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+h2 {
+  font-family: 'Raleway', san-serif;
+  font-weight: 400;
+}
+.intro {
+  text-align: center;
+}
+.intro h1, .intro h2 {
+  max-width: 500px;
+  margin-left: auto; margin-right: auto;
+}
+.intro h1 {
+  font-size: 50px;
+}
+.intro h2 {
+  font-size: 24px;
+  color: gray;
+}
+.black .intro h2 {
+  color: #DDD;
+}
+.links {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin-left: auto; margin-right: auto;
+  font-size: 25px;
+}
+.links > a {
+  display: inline-block;
+  transform-origin: top;
+  perspective: 600px;
+  transition: 0.3s color, 0.3s transform;
+}
+.links > a:hover {
+  transform: scale(1.2);
+}
+@keyframes linksina {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  75% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes linksinb {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  75% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes linksinc {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  75% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes linksind {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  75% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes linksine {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  75% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes linksinf {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  75% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes linksing {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  75% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.links .cosmos {
+  animation: 3400ms linksina;
+}
+.links .linkedin {
+  animation: 3400ms linksina;
+}
+.links .github {
+  animation: 3500ms linksinb;
+}
+.links .dribbble {
+  animation: 4s linksinc;
+}
+.links .twitter {
+  animation: 3600ms linksind;
+}
+.links .googleplus {
+  animation: 4s linksine;
+}
+.links .facebook{
+  animation: 3700ms linksinf;
+}
+.links .maillink{
+  animation: 4s linksing;
+}
+.links .cosmos:hover {
+  color: #1a71ff;
+}
+.links .linkedin:hover {
+  color: rgb(0, 123, 182);
+}
+.links .github:hover {
+  color: limegreen;
+}
+.links .dribbble:hover {
+  color: rgb(197, 55, 109);
+}
+.links .twitter:hover {
+  color: rgb(0, 172, 237);
+}
+.links .googleplus:hover {
+  color: rgb(211, 72, 57);
+}
+.links .facebook:hover {
+  color: rgb(59, 89, 152);
+}
+.links .maillink:hover {
+  color: rgb(255, 253, 0);
+}
+.key {
+  animation: 4s footera;
+}
+.mail {
+  animation: 4s footerb;
+}
+.made {
+  animation: 4s footerc;
+}
+@keyframes footera {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes footerb {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes footerc {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.homeLayout .homeRow.footer {
+  height: 1px;
+}
+.homeLayout .homeRow.footer > div {
+  padding: 10px;
+  text-align: right;
+}
+.homeLayout .homeRow.footer .fa-globe {
+  color: #787878;
+}
+.homeLayout .homeRow.footer .fa-heart {
+  color: deeppink;
+}
+.homeLayout .homeRow.footer .fa-envelope {
+  color: #787878;
+}
+.homeLayout .homeRow.footer .fa-key {
+  color: #787878;
+}
+
+.homeLayout .homeRow.footer .emailpt1 {
+  display: inline-block;
+  transform: translate3d(10px, 0, 0);
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: 0.6s transform, 0.6s max-width, 0.6s opacity;
+}
+.homeLayout .homeRow.footer .mail a:hover .emailpt1 {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  max-width: 50px;
+  text-decoration: underline;
+}
+
+.homeLayout .homeRow.footer .made {
+  color: gray;
+}
+.black .homeLayout .homeRow.footer .made {
+  color: #DDD;
+}
