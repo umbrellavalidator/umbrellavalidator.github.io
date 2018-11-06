@@ -146,85 +146,7 @@ h2 {
 .links > a:hover {
   transform: scale(1.2);
 }
-@keyframes linksina {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  75% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes linksinb {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  75% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes linksinc {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  75% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes linksind {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  75% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes linksine {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  75% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes linksinf {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  75% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes linksing {
+@keyframes links {
   0% {
     transform: rotateX(-90deg);
     opacity: 0;
@@ -238,28 +160,7 @@ h2 {
   }
 }
 .links .cosmos {
-  animation: 3400ms linksina;
-}
-.links .linkedin {
-  animation: 3400ms linksina;
-}
-.links .github {
-  animation: 3500ms linksinb;
-}
-.links .dribbble {
-  animation: 4s linksinc;
-}
-.links .twitter {
-  animation: 3600ms linksind;
-}
-.links .googleplus {
-  animation: 4s linksine;
-}
-.links .facebook{
-  animation: 3700ms linksinf;
-}
-.links .maillink{
-  animation: 4s linksing;
+  animation: 3400ms links;
 }
 .links .cosmos:hover {
   color: #1a71ff;
@@ -286,46 +187,23 @@ h2 {
   color: rgb(255, 253, 0);
 }
 .key {
-  animation: 4s footera;
+  animation: 3.8s footer;
 }
 .mail {
-  animation: 4s footerb;
+  animation: 3.8s footer;
 }
-.made {
-  animation: 4s footerc;
+.twitter0 {
+  animation: 3.6s footer;
 }
-@keyframes footera {
+.twitter1 {
+  animation: 3.6s footer;
+}
+@keyframes footer {
   0% {
     transform: translateX(100px);
     opacity: 0;
   }
   75% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes footerb {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  80% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes footerc {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  80% {
     transform: translateX(100px);
     opacity: 0;
   }
@@ -352,22 +230,9 @@ h2 {
 .homeLayout .homeRow.footer .fa-key {
   color: #787878;
 }
-
-.homeLayout .homeRow.footer .emailpt1 {
-  display: inline-block;
-  transform: translate3d(10px, 0, 0);
-  opacity: 0;
-  max-width: 0;
-  overflow: hidden;
-  transition: 0.6s transform, 0.6s max-width, 0.6s opacity;
+.homeLayout .homeRow.footer .fa-twitter {
+  color: #787878;
 }
-.homeLayout .homeRow.footer .mail a:hover .emailpt1 {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-  max-width: 50px;
-  text-decoration: underline;
-}
-
 .homeLayout .homeRow.footer .made {
   color: gray;
 }
