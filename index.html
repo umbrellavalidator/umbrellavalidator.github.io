@@ -6,19 +6,19 @@
   <meta name="viewport" content="initial-scale=1, width=device-width">
   <title>Umbrella Validator</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
-    integrity="sha384-jTFzRHnGayPcZHkUx5hTuWbygQevlGFimHdpRHicjyJXGyyjcioudSScb7/YN0PE"
-    crossorigin="anonymous">
+    integrity="integrity="sha384-jTFzRHnGayPcZHkUx5hTuWbygQevlGFimHdpRHicjyJXGyyjcioudSScb7/YN0PE"
+    crossorigin="anonymous"
+  >
 
   <link rel="stylesheet" href="public/umbrella.css"
-    integrity="sha384-ng0ad3xGCahteCvrSyOaDg4rnO0o1eRaU1hvtfB6/poO+yTWY7TlP3wAa+8VnHcJ"
-    crossorigin="anonymous">
+    integrity="sha384-UVzx9k/e2wRU+xPyOnoWgTl76p1QdrBIeKRBwf7EBHiWqLKCiC4VQLUutEINgant"
+    crossorigin="anonymous"
+  >
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css"
-    integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css"
-    integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous"
+  >
 
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Raleway:500|Inconsolata" rel="stylesheet" data-noprefix>
 
@@ -34,21 +34,29 @@
       <br>
       <div class="links">
         <a href="https://cosmos.network/" class="cosmos"><img src="public/cosmos.png" class="fa fa-spin" width="120px"></img></a>
-        <!--
-        <a href="https://github.com/umbrellavalidator" class="github"><i class="fa fa-github-alt fa-fw"></i></a>
-        <a href="https://twitter.com/UmbrellaValid" class="twitter"><i class="fa fa-twitter"></i></a>
-        -->
       </div>
     </div>
     </div>
     <div class="homeRow footer">
       <div>
+      <div class="twitter0">
+        <i class="fab fa-twitter a-twitter0"></i>
+        <a href="https://twitter.com/jinghiskwon"> Jin Kwon</a>
+      </div>
+      <br>
+      <div class="twitter1">
+        <i class="fab fa-twitter a-twitter1"></i>
+        <a href="https://twitter.com/TILuigi"> Luigi Leung</a>
+      </div>
+      <br>
       <div class="key">
-        <i class="fa fa-key fa-fw"></i><a href="https://keybase.io/umbrellavalid/sigs/6WnTdDF0EclhEZyUya8aKWK4SCG2uNzPHObU"> A530 AC4D 7599 1FE2</a>
+        <i class="fa fa-key fa-fw"></i>
+        <a href="https://keybase.io/umbrellavalid/sigs/6WnTdDF0EclhEZyUya8aKWK4SCG2uNzPHObU"> A530 AC4D 7599 1FE2</a>
       </div>
       <br>
       <div class="mail">
-        <i class="fa fa-envelope fa-fw"></i><a href="mailto:hello@umbrellavalidator.com"> hello@umbrellavalidator.com</a>
+        <i class="fa fa-envelope fa-fw"></i>
+        <a href="mailto:hello@umbrellavalidator.com"> hello@umbrellavalidator.com</a>
       </div>
       <br>
       </div>
@@ -57,12 +65,10 @@
 </div>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  ></script>
 <script
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
+  ></script>
 <script>
   $(document).ready(function() {
     // Icons at center
@@ -70,6 +76,10 @@
       $("#outside").animate({backgroundColor: "#1d213e"}, 200); });
 
     // Icons at bottom-right
+    $(".twitter0").mouseover(function() {
+      $(".a-twitter0").animate({color: "#00ACED"}, 200); });
+    $(".twitter1").mouseover(function() {
+      $(".a-twitter1").animate({color: "#00ACED"}, 200); });
     $(".key").mouseover(function() {
       $(".fa-key").animate({color: "#F1C40F"}, 200); });
     $(".mail").mouseover(function() {
