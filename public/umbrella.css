@@ -159,6 +159,12 @@ h2 {
     opacity: 1;
   }
 }
+.links .irisnet {
+  animation: 3400ms links;
+}
+.links .irisnet:hover {
+  color: #1a71ff;
+}
 .links .cosmos {
   animation: 3400ms links;
 }
