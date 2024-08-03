@@ -1,165 +1,97 @@
-<!DOCTYPE HTML>
-<!--
-  Hyperspace by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umbrella Validator</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  </head>
-  <body class="is-preload">
+    <!-- Webpage inspired by The Grug Brained Developer's webpage -->
+<style type="text/css">
+body {
+    margin: 40px auto;
+    max-width: 768px;
+    line-height: 1.6;
+    font-size: 20px;
+    color: #444;
+    padding: 0 10px;
+}
 
-    <!-- Sidebar -->
-    <section id="sidebar">
-      <div class="inner">
-        <nav>
-          <ul>
-            <li><a href="#intro">Welcome</a></li>
-            <li><a href="#one">Who we are</a></li>
-            <li><a href="#two">Get in touch</a></li>
-            <li><a href="https://medium.com/umbrellavalidator">Blog</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
+pre {
+    font-size: 16px;
+}
 
-    <!-- Wrapper -->
-    <div id="wrapper">
+h1, h2, h3 {
+    line-height: 1.2
+}
 
-      <!-- Intro -->
-      <section id="intro" class="wrapper style1 fullscreen fade-up">
-        <div class="inner">
-          <h1>Umbrella Validator</h1>
-          <p>
-            We are a team of security experts focused on blockchain validation and development.
-          </p>
-          <ul class="actions">
-            <li><a href="#one" class="button scrolly">Learn more</a></li>
-          </ul>
-        </div>
-      </section>
+a:link {
+  text-decoration: none;
+}
 
-      <!-- One -->
-      <section id="one" class="wrapper style2 spotlights">
+a:visited {
+  text-decoration: none;
+}
 
-        <section>
-          <a href="#" class="image fit"><img src="images/logo-cosmos.png" alt="Cosmos Network logo" data-position="center center" style="padding: 5em 0 0 3em;" loading="lazy" /></a>
-          <div class="content">
-            <div class="inner">
-              <h2>Validator for the Cosmos Hub</h2>
-              <p>Validator address:<br />
-                <code>cosmosvaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss3q3t8m</code>
-              </p>
-              <p>Cosmos Hub: The hub of the hub-and-spoke network model of blockchains. Cosmos makes blockchains powerful and easy to develop with Tendermint Core and the modularity of the Cosmos SDK, enabling blockchains to transfer value with each other through IBC and Peg-Zones, while letting them retain their sovereignty. This allows blockchain applications to scale to millions of users through horizontal and vertical scalability solutions.</p>
-              <ul class="actions">
-                <li><a href="https://cosmos.network/" class="button">Learn more about Cosmos Hub</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
+a:hover {
+  text-decoration: underline;
+}
 
-        <section>
-          <a href="#" class="image fit">
-            <img src="images/logo-neutron.png" alt="Neutron logo" data-position="center center" style="padding: 10em 0 0 5em;" loading="lazy" />
-          </a>
-          <div class="content">
-            <div class="inner">
-              <h2>Validator for Neutron</h2>
-              <p>Validator address:<br />
-                <code>neutronvaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss2k49ht</code>
-              </p>
-              <p>Neutron: The Smart Contract Zone. Neutron is a blockchain network that brings Smart Contracts into the Cosmos-family blockchains using CosmWasm. Neutron works with networks using the IBC protocol. Neutron security (block validation) is provided by the Cosmos Hub network using Interchain Security.</p>
-              <ul class="actions">
-                <li><a href="https://neutron.org/" class="button">Learn more about Neutron</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
+a:active {
+  text-decoration: underline;
+}
+h1 a {
+    color: #444;
+}
 
-        <section>
-          <a href="#" class="image fit">
-              <img src="images/logo-stride.png" alt="Stride logo" data-position="center center" style="padding: 9em 0 0 5em;" loading="lazy" />
-          </a>
-          <div class="content">
-            <div class="inner">
-              <h2>Validator for Stride</h2>
-              <p>Validator address:<br />
-                <code>stridevaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss52p7np</code>
-              </p>
-              <p>Stride: The Liquid Staking Zone. Stride is a blockchain ("zone") that provides liquidity for staked tokens. Using Stride, you can earn both staking and DeFi yields across the Cosmos IBC ecosystem.</p>
-              <ul class="actions">
-                <li><a href="https://www.stride.zone/" class="button">Learn more about Stride</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- Two -->
-        <section id="two" class="wrapper style1 fade-up">
-          <div class="inner">
-            <h2>Get in touch</h2>
-            <div class="split style1">
-              <section>
-                <ul class="contact">
-                  <li>
-                    <h3><i class="fab fa-twitter"></i> X/Twitter</h3>
-                    <a href="https://twitter.com/umbrellavalid">https://twitter.com/umbrellavalid</a>
-                  </li>
-                  <li>
-                    <h3><i class="far fa-envelope"></i> Email</h3>
-                    <a href="mailto:hello@umbrellavalidator.com">hello@umbrellavalidator.com</a>
-                  </li>
-                  <li>
-                    <h3><i class="fab fa-keybase"></i> Keybase</h3>
-                    <a href="https://keybase.io/umbrellavalid/">A530 AC4D 7599 1FE2</a>
-                  </li>
-                </ul>
-              </section>
-              <section>
-                <ul class="contact">
-                  <li>
-                    <h3><i class="fab fa-github"></i> GitHub</h3>
-                    <a href="https://github.com/umbrellavalidator">https://github.com/umbrellavalidator</a>
-                  </li>
-                  <li>
-                    <h3><i class="fab fa-medium"></i> Blog</h3>
-                    <a href="https://medium.com/umbrellavalidator">https://medium.com/umbrellavalidator</a>
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </div>
-        </section>
-
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer" class="wrapper style1-alt">
-      <div class="inner">
-        <ul class="menu">
-          <li>&copy; Umbrella Validator, LLC. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>v2.3.0</li>
-        </ul>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-      crossorigin="anonymous">
-    </script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-  </body>
+h2 a {
+    color: #444;
+}
+</style>
+</head>
+<body>
+<div>
+<a href="https://www.umbrellavalidator.com">
+<img alt="Umbrella Validator's logo" src="images/favicon.png" style="float: left; height: 120px; margin-right: 20px; clear: both"/>
+</a>
+<h1>
+    Umbrella Validator<br/>
+    <small>we focus on blockchain validation, observability, and security research</small>
+</h1>
+</div>
+<h1>Introduction</h1>
+<p>stake <em>your</em> coins to avoid getting hit by inflation, and to help secure the network</p>
+<p>we are validators for the following blockchains:</p>
+<p>Cosmos Hub (<a href="#ATOM">$ATOM</a>), Neutron (<a href="#NTRN">$NTRN</a>), Stride (<a href="#STRD">$STRD</a>), GovGen (<a href="#GOVGEN">$GOVGEN</a>)</p>
+<h1><a name="ATOM"></a><a href="#ATOM">$ATOM, a hub in the Cosmos Network</a></h1>
+<p>validator address:</p>
+<p><code>cosmosvaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss3q3t8m</code></p>
+<ul>
+<li><a href="https://cosmos.network/">learn more about Cosmos: The Internet of Blockchains</a></li>
+</ul>
+<h1><a name="NTRN"></a><a href="#NTRN">$NTRN, a spoke secured by Cosmos Hub<br>for Apps</a></h1>
+<p>validator address:</p>
+<p><code>neutronvaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss2k49ht</code></p>
+<ul>
+<li><a href="https://www.neutron.org/">learn more about Neutron: The Integrated Application Network</a></li>
+</ul>
+<h1><a name="STRD"></a><a href="#STRD">$STRD, a spoke secured by Cosmos Hub<br>for Liquid Staking</a></h1>
+<p>validator address:</p>
+<p><code>stridevaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss52p7np</code></p>
+<ul>
+<li><a href="https://www.stride.zone/">learn more about Stride: Unlock the true value of your assets</a></li>
+</ul>
+<h1><a name="GOVGEN"></a><a href="#GOVGEN">$GOVGEN, shaping AtomOne Hub</a></h1>
+<p>validator address:</p>
+<p><code>govgenvaloper170kzzg9fj6fe0lvr5yg5r0ylplpqwljywn98xz</code></p>
+<ul>
+<li><a href="https://govgen.io/">learn more about GovGen: Shape The Potential Outcome Of AtomOne</a></li>
+</ul>
+<h1><a name="grug-reads"></a><a href="#grug-reads">Reads</a></h1>
+<p>we like these:</p>
+<ul>
+<li><a href="https://grugbrain.dev/">The Grug Brained Developer</a></li>
+</ul>
+<h1><a name="conclusion"></a><a href="#conclusion">Conclusion</a></h1>
+<p>stake <em>your</em> coins to avoid getting hit by inflation, and to help secure the network</p>
+</body>
 </html>
