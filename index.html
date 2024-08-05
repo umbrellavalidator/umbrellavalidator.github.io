@@ -7,6 +7,37 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <!-- Webpage inspired by The Grug Brained Developer's webpage -->
 <style type="text/css">
+@media screen and (max-width: 600px) {
+    body, p, li {
+        margin: 20px auto;
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+
+    code {
+        font-size: 10px !important;
+        word-wrap: break-word;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 body {
     margin: 40px auto;
     max-width: 768px;
@@ -16,34 +47,36 @@ body {
     padding: 0 10px;
 }
 
-pre {
-    font-size: 16px;
+h1, h2 {
+    line-height: 1.2
 }
 
-h1, h2, h3 {
-    line-height: 1.2
+h2 {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+p {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+code {
+    margin: 2px 0;
+    padding: 2px 4px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    font-size: 0.9em;
 }
 
 a:link {
   text-decoration: none;
 }
 
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-h1 a {
-    color: #444;
-}
-
-h2 a {
+h1 a, h2 a {
     color: #444;
 }
 </style>
@@ -58,40 +91,46 @@ h2 a {
     <small>we focus on blockchain validation, observability, and security research</small>
 </h1>
 </div>
-<h1>Introduction</h1>
-<p>stake <em>your</em> coins to avoid getting hit by inflation, and to help secure the network</p>
+<h2>Introduction</h2>
 <p>we are validators for the following blockchains:</p>
 <p>Cosmos Hub (<a href="#ATOM">$ATOM</a>), Neutron (<a href="#NTRN">$NTRN</a>), Stride (<a href="#STRD">$STRD</a>), GovGen (<a href="#GOVGEN">$GOVGEN</a>)</p>
-<h1><a name="ATOM"></a><a href="#ATOM">$ATOM, a hub in the Cosmos Network</a></h1>
+<p>stake <em>your</em> coins to earn rewards, avoid inflation, and help secure the network</p>
+<h2><a name="ATOM"></a><a href="#ATOM">Cosmos Hub</a></h2>
 <p>validator address:</p>
 <p><code>cosmosvaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss3q3t8m</code></p>
+<p>Cosmos Hub is a hub in the Cosmos Network, modeled after the hub-and-spoke model in network topology. In this case, the hub is a blockchain that provides security to the spokes, other blockchains, via Interchain Security (ICS). There are multiple hubs in a decentralized network - for example, other hubs include IRISnet and AtomOne. In the Cosmos Network, value and messages are passed between blockchains that have Inter-Blockchain Communication (IBC) enabled. There are a few that do not have it enabled, especially when the blockchain is newly in production, but most do. Value is accrued to Cosmos Hub via various ways through governance, and from consumer chains (e.g. Neutron and Stride). $ATOM is a governance token for voting on proposals, and a gas token for sending transactions. You can stake your $ATOM to a validator or multiple validators to allow them to vote on your behalf when you are not available or not interested in the governance details. In return, you get rewards for staking. The reward is an interest rate, currently at around 13% APR. If you stake 100 coins, you get around 113 coins after a year. You can unstake anytime, and even if validators go out of business, you can get back your $ATOM. When you unstake, there is a 21-day waiting period. This waiting period is the same for all validators, and is enforced by the blockchain for its own security purposes - for example, deterring misbehaving validators and malicious activities.</p>
 <ul>
 <li><a href="https://cosmos.network/">learn more about Cosmos: The Internet of Blockchains</a></li>
 </ul>
-<h1><a name="NTRN"></a><a href="#NTRN">$NTRN, a spoke secured by Cosmos Hub<br>for Apps</a></h1>
+<h2><a name="NTRN"></a><a href="#NTRN">Neutron</a></h2>
 <p>validator address:</p>
 <p><code>neutronvaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss2k49ht</code></p>
+<p>Neutron is a blockchain for apps. Programs compiled to WebAssembly (Wasm) can be deployed and run here. A popular framework to help programmers write these programs is CosmWasm. There are other blockchains that can run Wasm programs - for example, some include Juno and Terra. Neutron's blockchain is secured by Cosmos Hub and has its own governance. $NTRN is a governance token for voting on proposals, and a gas token for sending transactions. Value is accrued to Neutron via transaction fees where 25% of the fee is sent to Cosmos Hub for ICS, and 75% of the fee is burned. Value is also accrued to Neutron through apps that are launched on it that use Neutron-based assets and $NTRN for gas. Some of these apps include Astroport, a token exchange that uses an automated market-maker (AMM) which uses liquidity pools where Neutron-based assets are used. Native assets, Neutron-wrapped assets (assets bridged from outside the Cosmos Network), and IBC-enabled assets can be used on Astroport too.</p>
 <ul>
 <li><a href="https://www.neutron.org/">learn more about Neutron: The Integrated Application Network</a></li>
 </ul>
-<h1><a name="STRD"></a><a href="#STRD">$STRD, a spoke secured by Cosmos Hub<br>for Liquid Staking</a></h1>
+<h2><a name="STRD"></a><a href="#STRD">Stride</a></h2>
 <p>validator address:</p>
 <p><code>stridevaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss52p7np</code></p>
+<p>Stride is a blockchain for liquid staking. Liquid staking is where staked assets get liquidity in return for a fee. It is similar to collateralizing a house to get a loan, so that the homeowner can get to use some of the money that corresponds to their home value that was previously locked as a homeowner. In Proof-of-Stake (PoS) blockchains, staked assets are locked and their value or money is not usable, and unstaking has a waiting period. To allow staked assets' value or money to be usable upon owner's request, one solution is with liquid staking where staked assets can be used as collateral for receiving the staked asset derivative. These derivatives can be used across various DeFi protocols within the Cosmos ecosystem, providing users with liquidity while earning staking rewards. Other solutions include trading staked assets for unstaked assets, collateralizing staked assets to loan an unstaked assets, receiving bonds for staked assets, receiving synthetic assets for staked assets. Each of these solutions has its pros and cons, and the different solutions suit different use cases. $STRD is a governance token. Value is accrued to Stride through protocol fees, where staked $STRD receives 85% of the share and the share is distributed as a basket of different Cosmos tokens like stATOM, stDYDX, stTIA.</p>  
 <ul>
 <li><a href="https://www.stride.zone/">learn more about Stride: Unlock the true value of your assets</a></li>
 </ul>
-<h1><a name="GOVGEN"></a><a href="#GOVGEN">$GOVGEN, shaping AtomOne Hub</a></h1>
+<h2><a name="GOVGEN"></a><a href="#GOVGEN"></a>GovGen</h2>
 <p>validator address:</p>
 <p><code>govgenvaloper170kzzg9fj6fe0lvr5yg5r0ylplpqwljywn98xz</code></p>
+<p>GovGen is a blockchain in governance for shaping an upcoming hub: AtomOne Hub. AtomOne Hub maintains the ideology of keeping the hub minimal, and therefore has fewer bugs, reduces the chance of catastrophe, and reduces systemic risks. $GOVGEN is the governance token and is not transferable.</p>
 <ul>
 <li><a href="https://govgen.io/">learn more about GovGen: Shape The Potential Outcome Of AtomOne</a></li>
 </ul>
-<h1><a name="grug-reads"></a><a href="#grug-reads">Reads</a></h1>
+<h2><a name="grug-reads"></a><a href="#grug-reads">Reads</a></h2>
 <p>we like these:</p>
 <ul>
+<li><a href="https://nakamotoinstitute.org/library/the-cathedral-and-the-bazaar/">The Cathedral and the Bazaar</a></li>
+<li><a href="https://paulgraham.com/greatwork.html">How to Do Great Work</a></li>
 <li><a href="https://grugbrain.dev/">The Grug Brained Developer</a></li>
 </ul>
-<h1><a name="conclusion"></a><a href="#conclusion">Conclusion</a></h1>
-<p>stake <em>your</em> coins to avoid getting hit by inflation, and to help secure the network</p>
+<h2><a name="conclusion"></a><a href="#conclusion">Conclusion</a></h2>
+<p>stake <em>your</em> coins to earn rewards, avoid inflation, and help secure the network</p>
 </body>
 </html>
